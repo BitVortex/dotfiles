@@ -12,3 +12,4 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 export LANG=en_GB.utf8
 export LC_COLLATE=C
 export LC_TIME=de_DE.utf8
+source ~/.zsh_aliases
