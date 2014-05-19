@@ -1,0 +1,44 @@
+music_directory		"/var/lib/mpd/music"
+playlist_directory	"/var/lib/mpd/playlists"
+db_file			"/var/lib/mpd/tag_cache"
+log_file		"/var/log/mpd/mpd.log"
+pid_file		"/run/mpd/pid"
+state_file		"/var/lib/mpd/state"
+sticker_file 		"/var/lib/mpd/sticker.sql"
+###############################################################################
+user			"mpd"
+bind_to_address		"localhost"
+port			"6600"
+###############################################################################
+filesystem_charset	"UTF-8"
+id3v1_encoding		"UTF-8"
+###############################################################################
+#
+# Pulseaudio output to local server (so mpd does not spawn a new instance)
+#
+audio_output {
+	type		"pulse"
+	name		"mpd_pulse_local"
+	server		"127.0.0.1"
+}
+#
+# Streaming output for local network
+#
+audio_output {
+	type		"httpd"
+	name		"mpd_httpd"
+	encoder		"vorbis"
+	port		"6060"
+	bind_to_address "localhost"
+	bitrate		"192"
+	format		"44100:16:2"
+}
+#
+# FIFO output for ncmpcpp visualizer
+#
+audio_output {
+	type		"fifo"
+	name		"mpd_fifo"
+	path		"/tmp/mpd.fifo"
+	format		"44100:16:2"
+}
