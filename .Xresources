@@ -1,11 +1,13 @@
 ! --- URxvt settings
-URxvt.perl-ext-common: default,clipboard,matcher
-URxvt.matcher.button: 1
-URxvt.scrollstyle: plain
+URxvt*loginShell: true
+URxvt*perl-ext-common: default,clipboard,matcher
+URxvt*matcher.button: 1
 URxvt*font: xft:Inconsolata:style=Semibold:pixelsize=12:antialias=true:hinting=slight
 URxvt*boldFont: xft:Inconsolata:style=bold:pixelsize=12:antialias=true:hinting=slight
-URxvt*.transparent: true
-URxvt*.shading: 105
+URxvt*visualBell: true
+URxvt*transparent: true
+URxvt*shading: 50
+URxvt*scrollstyle: plain
 
 ! --- Xft settings
 Xft.dpi:       96

@@ -1,9 +1,9 @@
 ##dotfiles (BitVortex)
 
 ####.Xresources
-* includes settings for rxvt-unicode and references a custom-written clipboard plugin
+* includes settings for rxvt-unicode-256color and references a custom-written clipboard plugin
 * requires Inconsolate font to be installed
-* makes use of the Solarized Dark color scheme by Ethan Schoonover
+* makes use of the Solarized Dark color scheme by Ethan Schoonover, covering the first 16 colors
 
 ####.zshrc
 * requires zsh and oh-my-zsh
@@ -16,6 +16,7 @@
 * enables UTF-8/Unicode support
 * sets several variables to provide a pleasent development environment
 * enabled Pathogen for easy plugin management, plugins not (yet) included
+* enables the desert256 color scheme, if the terminal supports 256 colors; scheme not (yet) included
 
 ####.mpd
 * UTF-8 compatible, global configuration for mpd (goes to `/etc/mpd.conf`), but easily tweakable to run as a user
