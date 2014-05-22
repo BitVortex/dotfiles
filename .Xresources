@@ -6,7 +6,7 @@ URxvt*font: xft:Inconsolata:style=Semibold:pixelsize=12:antialias=true:hinting=s
 URxvt*boldFont: xft:Inconsolata:style=bold:pixelsize=12:antialias=true:hinting=slight
 URxvt*visualBell: true
 URxvt*transparent: true
-URxvt*shading: 50
+URxvt*shading: 30
 URxvt*scrollstyle: plain
 
 ! --- Xft settings
