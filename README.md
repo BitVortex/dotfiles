@@ -30,5 +30,5 @@
 ####.ncmpcpp/config
 * set up to connect to a global mpd instance
 * uses Unicode characters for the visualizer and progressbar
-* cuts down the color scheme to provide a good-looking, simple player in combination with the Solarized Dark color scheme
+* reconfigures the interface to provide a sleek, column-based look
 
