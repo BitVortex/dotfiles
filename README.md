@@ -12,6 +12,11 @@
 * `~/bin` is appended to the bath, allowing for custom, per-user scripts to be run easily from every directory
 * `~/zsh_aliases` is sourced, which contains useful, but also private aliases (for faster SSH connections etc.)
 
+####.tmux.conf
+* rebinds prefix from ^B to ^A
+* rebinds several actions like window-list or previous/next window and splitting to more straight-forward keys
+* notifies of activity in other windows via status bar
+
 ####.vimrc
 * enables UTF-8/Unicode support
 * sets several variables to provide a pleasent development environment
